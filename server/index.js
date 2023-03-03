@@ -10,7 +10,7 @@ app.get('/api/', (req, res) => {
   res.send('Hello World')
 })
 
-app.get('/', (req, res) => {
+app.get('/api/data/', (req, res) => {
  res.json({
     "msg":"hello Slivertouch good morning....",
     "backEnd":"Node.js",
