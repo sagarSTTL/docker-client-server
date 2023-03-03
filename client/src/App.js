@@ -4,12 +4,12 @@ import { Text } from 'react';
 import './App.css';
 
 const App = () => {
-  const [isValue, setValue] = useState("......");
+  const [isValue, setValue] = useState("");
   const [isError, setError] = useState("......");
 
   const fetchData = async () => {
     // const url = "https://api.adviceslip.com/advice";
-    
+
     const url = "http://127.0.0.1:3000/api/data";
     try {
       const response = await fetch(url);
